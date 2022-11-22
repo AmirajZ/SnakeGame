@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Arcade</title>
+    <style>
+        body {
+            background:url("./6705.jpg");
+            background-size: 100vw 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        #gameBoard{
+            width: 90vmin;
+            height: 90vmin;
+            border: 3px solid black;
+            display: grid;
+            grid-template-rows: repeat(20,1fr) ;
+            grid-template-columns: repeat(20,1fr) ;
+        }
+        .snake{
+            background-color: black;
+            
+
+        }
+        .food{
+            background-color: red;
+            border: solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="gameBoard"></div>
+    
+</body>
+<script src="index.js" defer type ="module"></script>
+</html>
